@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "alias",
+        "firstName",
+        "lastInitial",
+        "mainRole"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "alias": {
+            "type": "string",
+            "maxLength": 15
+        },
+        "firstName": {
+            "type": "string"
+        },
+        "lastInitial": {
+            "type": "string"
+        },
+        "preferredPronouns": {
+            "type": ["string", "nul"]
+        },
+        "countryOrigin": {
+            "type": ["string", "null"]
+        },
+        "mainRole": {
+            "type": "string"
+        }
+    },
+    "examples": [
+        {
+            "alias": "r3th",
+            "isActive": true,
+            "firstName": "Brian",
+            "lastInitial": "C",
+            "preferredPronouns": "he/him",
+            "countryOrigin": "USA",
+            "mainRole": "flex"
+        }
+    ]
+}

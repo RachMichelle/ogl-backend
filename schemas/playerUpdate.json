@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "isActive": {
+            "type": "boolean"
+        },
+        "firstName": {
+            "type": "string"
+
+        },
+        "lastInitial": {
+            "type": "string"
+        },
+        "preferredPronouns": {
+            "type": "string"
+        },
+        "countryOrigin": {
+            "type": "string"
+        },
+        "mainRole": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "username",
+        "firstName",
+        "lastInitial",
+        "password",
+        "email",
+        "staffType"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "username": {
+            "type": "string",
+            "maxLength": 15
+        },
+        "firstName": {
+            "type": "string"
+        },
+        "lastInitial": {
+            "type": "string"
+        },
+        "preferredPronouns": {
+            "type": ["string", "null"]
+        },
+        "password": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "staffType": {
+            "type": "string"
+        }
+    },
+    "examples": [
+        {
+            "username": "maegical",
+            "isActive": true,
+            "firstName": "Mae",
+            "lastInitial": "S",
+            "preferredPronouns": "she/her",
+            "password": "password",
+            "email": "contact.mae@ogl.com",
+            "staffType": "moderator"
+        }
+    ]
+}

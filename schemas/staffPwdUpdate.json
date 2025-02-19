@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
+        "password": {
+            "type": "string"
+        },
+        "newPassword": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "password",
+        "newPassword"
+    ]
+}

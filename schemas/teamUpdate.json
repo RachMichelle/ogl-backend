@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "code",
+        "teamName",
+        "isActive",
+        "establishedDate"
+    ],
+    "properties": {
+        "teamName": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "isActive": {
+            "type": "boolean"
+        },
+        "logo": {
+            "type": "string"
+        },
+        "captain": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
