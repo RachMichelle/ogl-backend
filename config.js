@@ -2,7 +2,7 @@
 
 require("dotenv").config();
 
-const SECRET_KEY = process.env.SECRET_KEY || 'secretkeyhere'
+const SECRET_KEY = process.env.SECRET_KEY
 
 const PORT = +process.env.PORT || 3001;
 

@@ -62,9 +62,8 @@ router.get('/:code', async (req, res, next) => {
 router.post('/', ensureStaff, async (req, res, next) => {
     try {
         validateData(req.body, teamNewSchema);
-        console.log(req.body)
+        
         const team = await Team.add(req.body);
-        console.log(team)
         return res.status(201).json({ team })
     } catch (e) {
         return next(e);
