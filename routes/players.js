@@ -60,9 +60,8 @@ router.get('/:alias', async (req, res, next) => {
 router.post('/', ensureStaff, async (req, res, next) => {
     try {
         validateData(req.body, playerNewSchema);
-        console.log(req.body);
+        
         const player = await Player.add(req.body);
-        console.log(player);
         return res.status(201).json({ player })
     } catch (e) {
         return next(e);
